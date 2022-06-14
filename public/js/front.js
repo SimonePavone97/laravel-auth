@@ -137,6 +137,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "header"
 });
@@ -629,21 +630,25 @@ var render = function () {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-8" }, [
-        _c("div", [_c("Header"), _vm._v(" "), _vm._m(0)], 1),
+        _c(
+          "div",
+          { staticClass: "card" },
+          [
+            _c("Header"),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _vm._v(
+                "\n                    Sito in costruzione\n                "
+              ),
+            ]),
+          ],
+          1
+        ),
       ]),
     ]),
   ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("h2", { staticClass: "text" }, [_vm._v("Sito in costruzione")]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -672,15 +677,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("header", [
-      _c("img", {
-        staticClass: "logo",
-        attrs: {
-          src: __webpack_require__(/*! ./../../../public/img/NASA_logo.png */ "./public/img/NASA_logo.png"),
-          alt: "logo nasa",
-        },
-      }),
-    ])
+    return _c("header", [_c("h1", [_vm._v("Benvenuuuuti")])])
   },
 ]
 render._withStripped = true
@@ -12867,17 +12864,6 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./public/img/NASA_logo.png":
-/*!**********************************!*\
-  !*** ./public/img/NASA_logo.png ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/NASA_logo.png?55a9012b501d4ad73887135ac49d4622";
-
-/***/ }),
-
 /***/ "./resources/js/components/App.vue":
 /*!*****************************************!*\
   !*** ./resources/js/components/App.vue ***!
@@ -13025,16 +13011,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/App.vue */ "./resources/js/components/App.vue");
+/* harmony import */ var _components_App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/App.vue */ "./resources/js/components/App.vue");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
-
-var root = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+var root = new Vue({
   el: '#root',
   render: function render(h) {
-    return h(_components_App_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
+    return h(_components_App_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
   }
 });
 
@@ -13047,7 +13030,7 @@ var root = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/valentinodestefano/Dropbox/Boolean/Esercizi/laravel-auth/resources/js/front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! C:\Users\simon\Desktop\laravel-test\resources\js\front.js */"./resources/js/front.js");
 
 
 /***/ })

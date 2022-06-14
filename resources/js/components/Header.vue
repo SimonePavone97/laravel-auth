@@ -1,11 +1,13 @@
 <template>
     <header>
-        <img class="logo" src="./../../../public/img/NASA_logo.png" alt="logo nasa">
+        <h1>Benvenuuuuti</h1>
     </header>
 </template>
+
 
 <script>
 export default{
     name:"header"
 }
+
 </script>

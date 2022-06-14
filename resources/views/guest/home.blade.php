@@ -4,12 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -66,12 +64,11 @@
         </style>
     </head>
     <body>
-        <div class="position-ref full-height">
+        <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
-                        <a href="{{route('login')}}">Sezione Admin</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -83,13 +80,15 @@
             @endif
 
             <div class="content">
-               <!-- Pagina in costruzione -->
-               <div id="root">
+                <!--Pagina in costruzione-->
+                <!--Inserire VUE-->
+                <div id="root">
 
-               </div>
+                </div>
             </div>
         </div>
-        <!-- Richiamare javascript con dentro vue -->
-        <script src="{{asset('js/front.js')}}"></script>
+
+        <!--Richiamare il javascript con dentro vue-->
+        <script src=" {{ asset ( 'js/front.js' )}} "></script>
     </body>
 </html>

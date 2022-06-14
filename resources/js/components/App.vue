@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div>
+                <div class="card">
                     <Header/>
 
                     <div class="card-body">
-                        <h2 class="text">Sito in costruzione</h2>
+                        Sito in costruzione
                     </div>
                 </div>
             </div>
@@ -15,10 +15,11 @@
 </template>
 
 <script>
-import Header from './Header.vue'
+
+import Header from './Header.vue';
 export default{
-    name: "App",
-    components: {
+    name:"App",
+    components:{
         Header
     }
 }
