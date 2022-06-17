@@ -216,4 +216,21 @@ Per quanto riguarda lo slug bisogna sempre importarlo con: Use Illuminate\Suppor
 
 A questo punto possiamo passare ai Seeder e andare in DatabaseSeeder.php e scommentare il contenuto di run e modificarlo in base al nome del Seeder. 
 
+
+
+
+------------------------------------------------------------------------------------------
+
+
+Ora dobbiamo passare tutti i dati(faker) alla index. Per poterlo fare dobbiamo andare in PostController e inserire il model: use App\Models\Post;
+
+Avendo inserito un model per richiamare i dati (nella index) si crea una variabile al plurale perché conterra più elementi. Si utilizza il nome del modello con all cosi:
+
+ $posts = Post::all();
+
+return view('admin.posts.index', compact('posts'));
+
+
+Per noi tutto quello che è CRUD lo inseriamo nelle view ma nella cartella Admin perché questa avrà tutte le view che sono per noi back e che sono gestite tutte dal login. Quindi all'interno di admin dobbiamo creare un'altra cartella che si chiamerà posts e all'interno di questa cartella dobbiamo inserire index.blade.php e Successivamente darla come riferimento. (vedi riga 231)
+
 </p> 
